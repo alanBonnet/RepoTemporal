@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- doctype sirve para lo que es definir a los navegadores que 
+este documento es de html5 -->
+<html lang="en">
+  <!-- html lang en solo indica el lenguaje de la página -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- UTF 8 indica que estamos manejando caracteres especiales como 
+    á ñ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- indica que se va formatear para ser compatible con Internet explorer EDGE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- indica que tanto el ancho de una pantalla normal de pc
+    va tener su formato para todo los dispositivos (un solo formato) -->
+    <title>Document</title>
+    <!-- title del documento -->
+
+    <!-- importacion de css externos (que no son propios) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    />
+
+    <!-- importacion de css internos (que son propios) -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- background = bg -->
+    <nav class="navbar navbar-expand-lg bg-danger navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ericito</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- m = margin && e = end -->
+          <!-- p = padding && s = start -->
+          <!-- mx = margin a la izquierda y a la derecha
+                 my = margin arriba y abajo -->
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-warning" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- frontend la parte dedicada a la interacción con el usuario(cliente)
+        envia peticiones al servidor(backend)
+        -->
+    <!-- 12 = 100% del ancho de la página 
+            se mostrará una tarjeta por línea
+        -->
+    <!-- 6 = 50% del ancho de la página 
+            se mostrará 2 tarjetas por línea
+        -->
+    <!-- 3 = 25% del ancho de página 
+            se mostrará 4 tarjetas por línea
+        -->
+    <div class="container mt-5">
+      <div class="row" id="listaDeTarjetas">
+        <!-- pintar cada tarjeta -->
+        
+      </div>
+    </div>
+
+    <!-- importacion de archivos externos como tambien que sean independiente -->
+    <script src=" 	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- importacion de archivos internos y dependientes -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
