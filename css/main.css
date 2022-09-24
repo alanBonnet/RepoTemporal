@@ -1,3 +1,7 @@
 body{
     background-color: dimgrey;
 }
+
+.tipoPokemon{
+    width: 4rem;
+}
